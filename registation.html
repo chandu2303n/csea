@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form </title>
+    <script>
+        function show()
+        {
+            var name=document.getElementById("Username").value;
+            var age=document.getElementById("age").value;
+            var email=document.getElementById("email").value;
+            if(name&&age&&email)
+            {
+               document.getElementById("one").innerText="registered";
+               document.getElementById("two").innerText="name:" +name+ "\nage\t\t:"+age+"\nemail:"+email;
+                
+            }  
+            else
+            {
+               document.getElementById("one").innerText="not registered";
+            } 
+
+        }
+        function show1()
+        {
+         
+        }
+        
+    </script>
+    <link ref="stylesheet" href="./style.css">
+</head>
+<body>
+    <form>
+        <center>
+            <h1>REGISTATION FORM</h1>
+            <image src="./image.png" height="100"><br><br>
+            <label>Username:</label> <input type="text" id="Username" size="30"></br></br>
+            <label>age:</label> <input type="text"   id="age" size="30"><br><br>
+            <label>Email:</label> <input type="text" placeholder="ex.abc@gamil.com" id="email" size="30"><br><br>
+            <input type="button" value="submit" onclick="show()">
+            <input type="button" value="reset"  onclick="show1()">
+            <p id="one"></p>
+            <p id="two"></p>
+        </center>
+    </form>
+    
+    
+    
+  
+    
+</body>
+</html>
